@@ -11,6 +11,8 @@
 	<bean id="studentService" class="com.roger.ws.impl.StudentServiceImpl"/>
 	
 	<jaxws:endpoint id="studentWs" address="/studentOperation" implementor="#studentService">
+		<jaxws:inInterceptors/>
+		<jaxws:outInterceptors/>
 	</jaxws:endpoint>
  
 </beans>
